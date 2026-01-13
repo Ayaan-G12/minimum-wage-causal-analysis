@@ -1,0 +1,29 @@
+                            OLS Regression Results                            
+==============================================================================
+Dep. Variable:      unemployment_rate   R-squared:                       0.019
+Model:                            OLS   Adj. R-squared:                  0.018
+Method:                 Least Squares   F-statistic:                    0.9527
+Date:                Tue, 13 Jan 2026   Prob (F-statistic):              0.329
+Time:                        18:26:40   Log-Likelihood:                -4924.1
+No. Observations:                2295   AIC:                             9856.
+Df Residuals:                    2291   BIC:                             9879.
+Df Model:                           3                                         
+Covariance Type:                  HC1                                         
+================================================================================
+                   coef    std err          z      P>|z|      [0.025      0.975]
+--------------------------------------------------------------------------------
+Intercept        6.4778      0.087     74.080      0.000       6.306       6.649
+treated      -5.407e+12   5.54e+12     -0.976      0.329   -1.63e+13    5.45e+12
+post            -0.6724      0.106     -6.336      0.000      -0.880      -0.464
+treated_post  5.407e+12   5.54e+12      0.976      0.329   -5.45e+12    1.63e+13
+==============================================================================
+Omnibus:                      299.230   Durbin-Watson:                   0.353
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              455.431
+Skew:                           0.925   Prob(JB):                     1.27e-99
+Kurtosis:                       4.159   Cond. No.                     7.56e+14
+==============================================================================
+
+Notes:
+[1] Standard Errors are heteroscedasticity robust (HC1)
+[2] The smallest eigenvalue is 7.45e-27. This might indicate that there are
+strong multicollinearity problems or that the design matrix is singular.
